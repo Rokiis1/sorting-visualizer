@@ -42,4 +42,4 @@ Start the server
 
 # Demo
 
-[Host Link on vercel](https://youtube-clone-rokiis1.vercel.app/)
+[Host Link on vercel](sorting-visualizer-rokiis1.vercel.app)
