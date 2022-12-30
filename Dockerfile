@@ -1,21 +1,12 @@
-# Dockerfile
-
-# ==== CONFIGURE =====
-# Use a Node 18 base image
-FROM node:18-alpine 
-# Set the working directory to /app inside the container
+FROM node:18-alpine as build
 WORKDIR /app
-# Copy app files
 COPY . .
-# ==== BUILD =====
-# Install dependencies (npm ci makes sure the exact versions in the lockfile gets installed)
-RUN npm ci 
-# Build the app
+RUN npm install
 RUN npm run build
-# ==== RUN =======
-# Set the env to "production"
-ENV NODE_ENV production
-# Expose the port on which the app will be running (3000 is the default that `serve` uses)
+
+FROM nginx:stable-alpine
+COPY --from=build /app/dist /usr/share/nginx/html/
+COPY --from=build /app/nginx/nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80
 EXPOSE 3000
-# Start the app
-CMD ["npm", "dev", "build" ]
+CMD ["nginx", "-g", "daemon off;"]
