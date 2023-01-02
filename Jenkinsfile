@@ -9,7 +9,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'docker build -f sorting_visualizer/Dockerfile .'
+        sh 'docker build -t sorting_visualizer:latest .'
       }
     }
 
