@@ -9,7 +9,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'docker build -f Dockerfile .'
+        sh 'sudo docker build -f Dockerfile .'
       }
     }
 
