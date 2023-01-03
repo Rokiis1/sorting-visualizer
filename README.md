@@ -9,7 +9,7 @@
 
 Functionality:
 
-This readme file is for a program that allows users to choose a sorting function (Merge Sort, Insertion Sort, Heap Sort, Quick Sort) and a range (delay and array length) and then use the selected function to sort an array.
+This readme file is for a program that allows users to choose a sorting function (Merge Sort, Insertion Sort, Heap Sort, Quick Sort) and a range (delay and array length) and then use the selected function to sort an array. The program is hosted on Amazon Web Services (AWS) using EC2 and ECR.
 
 To use the program, the user can click on the buttons to choose the desired sorting function and range. The program will then sort the array using the selected function and display the sorted array on the screen.
 
