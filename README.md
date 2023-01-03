@@ -7,11 +7,11 @@
 
 # Overview
 
-Functionality: click on buttons to choose a function, and range (delay, array length)
-Functions: **Merge sort** - a list into multiple sublists until each has only one item, then merges those sublists into a sorted list.
-**Insertion sort** - The array is virtually split into a sorted and an unsorted part.
-**Heap sort** - first find the minimum element and place the minimum element at the beginning.
-**Quick Sort** - array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot.
+Functionality:
+
+This readme file is for a program that allows users to choose a sorting function (Merge Sort, Insertion Sort, Heap Sort, Quick Sort) and a range (delay and array length) and then use the selected function to sort an array.
+
+To use the program, the user can click on the buttons to choose the desired sorting function and range. The program will then sort the array using the selected function and display the sorted array on the screen.
 
 # Technologies
 
