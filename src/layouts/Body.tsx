@@ -12,7 +12,7 @@ const Body = () => {
             key={`${item}-${settings.arrayLen}-${index}`}
             className="flex-1"
             style={{
-              backgroundColor: "#482",
+              backgroundColor: "#23b0e7",
               height: `${item / 7}%`,
             }}
             id={`${index}`}
