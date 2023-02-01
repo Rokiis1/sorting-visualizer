@@ -1,4 +1,5 @@
-export type Algo = "merge sort" | "insertion sort" | "heap sort" | "quick sort";
+/* eslint-disable linebreak-style */
+export type Algo = 'merge sort' | 'insertion sort' | 'heap sort' | 'quick sort';
 
 export interface Settings {
   algoType: Algo;
